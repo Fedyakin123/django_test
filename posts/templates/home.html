@@ -1,0 +1,11 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Posts page</h1>
+<ul>
+    {% for post in all_posts %}
+    <li>{{post}}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
